@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog sobre Grafos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Conceptos Fundamentales de Grafos</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#intro">¿Qué es un grafo?</a></li>
+        <li><a href="#estructura">Representaciones</a></li>
+        <li><a href="#recorridos">Métodos de recorrido</a></li>
+    </ul>
+</nav>
+
+<section id="intro" class="card">
+    <h2>1️⃣ ¿Qué es un grafo?</h2>
+    <p>
+        Un grafo es una estructura utilizada en ciencias de la computación para conectar elementos entre sí.
+        Cada elemento se conoce como <strong>nodo</strong> y las conexiones se llaman <strong>aristas</strong>.
+    </p>
+
+<pre>
+   A --- B
+   |   / |
+   |  /  |
+   C     D
+    \   /
+      E
+</pre>
+</section>
+
+<section id="estructura" class="card">
+    <h2>2️⃣ Formas de representar un grafo</h2>
+    
+    <h3>📌 Lista de adyacencia</h3>
+<pre>
+A → B, C
+B → A, C, D
+C → A, B, E
+D → B, E
+E → C, D
+</pre>
+
+    <h3>📌 Matriz de adyacencia</h3>
+<pre>
+    A B C D E
+A: 0 1 1 0 0
+B: 1 0 1 1 0
+C: 1 1 0 0 1
+D: 0 1 0 0 1
+E: 0 0 1 1 0
+</pre>
+</section>
+
+<section id="recorridos" class="card">
+    <h2>3️⃣ Recorridos comunes</h2>
+
+    <h3>🔍 Búsqueda en anchura (BFS)</h3>
+<pre>
+BFS(grafo, inicio):
+  crear una cola
+  marcar inicio como visitado
+</pre>
+
+    <h3>🧠 Búsqueda en profundidad (DFS)</h3>
+<pre>
+DFS(nodo):
+  marcar nodo como visitado
+  visitar vecinos no visitados
+</pre>
+
+</section>
+
+<footer>
+    <p>Creado por: <strong>Julián David Polania Jaimes</strong> — 2025</p>
+</footer>
+
+</body>
+</html>
